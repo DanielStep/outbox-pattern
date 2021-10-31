@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CAP.Application\Outbox.Application.csproj" />
+    <ProjectReference Include="..\Outbox.Application\Outbox.Application.csproj" />
   </ItemGroup>
 
 </Project>
