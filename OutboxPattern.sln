@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CAP.API", "CAP.API\CAP.API.csproj", "{0C2D77F6-52B6-42F3-A1D5-A9827B522827}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CAP.Application", "CAP.Application\CAP.Application.csproj", "{56235C68-F706-4CB5-BE71-37D3107DFA4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Outbox.Application", "CAP.Application\Outbox.Application.csproj", "{56235C68-F706-4CB5-BE71-37D3107DFA4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
