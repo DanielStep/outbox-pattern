@@ -12,5 +12,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Outbox.Application\Outbox.Application.csproj" />
   </ItemGroup>
-
+  
 </Project>
