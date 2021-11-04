@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.4.0" />
     <PackageReference Include="DotNetCore.CAP" Version="5.1.4" />
     <PackageReference Include="DotNetCore.CAP.AzureServiceBus" Version="5.1.4" />
     <PackageReference Include="DotNetCore.CAP.Dashboard" Version="5.1.4" />

@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Outbox.Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,14 @@ namespace CAP.API
             var serviceBusConnection = Configuration.GetValue<string>("ServiceBusConnection");
 
             services.AddDbContext<OutboxDbContext>(options => options.UseSqlServer(connectionString));
+            services.AddScoped<IMessageRepository, MessageRepository>();
+
+
+            services.AddSingleton(new ServiceBusClientSingleton(connectionString));
+            services.AddScoped<IServiceBus, ServiceBus>();
+
+            services.AddScoped<IOutboxMessageDispatcher, OutboxMessageDispatcher>();
+
 
             services.AddCap(x =>
             {
